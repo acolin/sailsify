@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.version     = Sailsify::VERSION
   s.authors     = ["Arnoldo Rodriguez"]
   s.email       = ["rodriguezcolin@gmail.com"]
-  s.homepage    = "github.com/acolin/sailsify"
+  s.homepage    = "https://www.github.com/acolin/sailsify"
   s.summary     = "Converts rails models and controllers to sails format"
   s.description = "Converts rails models and controllers to sails format"
   s.license     = "MIT"
