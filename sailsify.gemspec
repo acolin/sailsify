@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.version     = Sailsify::VERSION
   s.authors     = ["Arnoldo Rodriguez"]
   s.email       = ["rodriguezcolin@gmail.com"]
-  s.homepage    = "TODO"
+  s.homepage    = "github.com/acolin/sailsify"
   s.summary     = "Converts rails models and controllers to sails format"
   s.description = "Converts rails models and controllers to sails format"
   s.license     = "MIT"
@@ -17,7 +17,7 @@ Gem::Specification.new do |s|
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
   s.test_files = Dir["test/**/*"]
 
-  s.add_dependency "rails", "~> 4.1.13"
+  s.add_dependency "rails", "~> 4.1.0"
 
   s.add_development_dependency "sqlite3"
 end
