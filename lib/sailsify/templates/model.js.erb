@@ -5,7 +5,8 @@ module.exports = {
         <%= c.name.camelize(:lower) %>: {
           type: <%= c.type %>,
           columnName: <% c.name %>
-        }
+        },
     <% end %>
+    <%= @model.render_associations %>
   }
-}
+};

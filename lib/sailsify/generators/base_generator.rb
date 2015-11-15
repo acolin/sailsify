@@ -1,6 +1,8 @@
 module Sailsify
   module Generators
     class BaseGenerator
+      attr_reader :model
+
       def self.create(params)
         if params.kind_of?(Array)
           new_objs = params.map { |o| self.new(o) }
