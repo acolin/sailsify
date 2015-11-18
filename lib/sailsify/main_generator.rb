@@ -34,7 +34,12 @@ module Sailsify
     end
 
     def app_models
-      @app_models ||= ActiveRecord::Base.descendants
+      @app_models ||= load_models
+    end
+
+    def load_models
+      Rails.application.eager_load!
+      ActiveRecord::Base.descendants
     end
   end
 end
