@@ -21,7 +21,7 @@ module Sailsify
       end
 
       def associations
-        @associations ||= model.class.reflect_on_all_associations
+        @associations ||= model.reflect_on_all_associations
       end
 
       def supported_associations
