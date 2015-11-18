@@ -21,7 +21,7 @@ module Sailsify
       end
 
       def associations
-        @associations ||= model.reflect_on_all_associations
+        @associations ||= model.class.reflect_on_all_associations
       end
 
       def supported_associations
@@ -56,7 +56,7 @@ module Sailsify
       end
 
       def foreign_key_columns
-        @foreign_key_columns ||= model.class.reflect_on_all_associations.select { |a| a.macro == :belongs_to }.map(&:foreign_key).uniq
+        @foreign_key_columns ||= associations.select { |a| a.macro == :belongs_to }.map(&:foreign_key).uniq
       end
 
       def file_name
