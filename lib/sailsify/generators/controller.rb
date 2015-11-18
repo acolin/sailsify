@@ -1,6 +1,6 @@
 module Sailsify
   module Generators
-    class Controller < BaseGenerator
+    class Controller < AbstractGenerator
       private
 
       def file_name

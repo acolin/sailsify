@@ -1,6 +1,6 @@
 module Sailsify
   module Generators
-    class BaseGenerator
+    class AbstractGenerator
       attr_reader :model
 
       def self.create(params)

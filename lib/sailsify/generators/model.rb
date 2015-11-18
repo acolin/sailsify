@@ -1,6 +1,6 @@
 module Sailsify
   module Generators
-    class Model < BaseGenerator
+    class Model < AbstractGenerator
       def table_name
         model.table_name
       end

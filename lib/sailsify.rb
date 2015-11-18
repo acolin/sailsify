@@ -2,7 +2,7 @@ module Sailsify
   module Generators
     autoload :Model, 'sailsify/generators/model'
     autoload :Controller, 'sailsify/generators/controller'
-    autoload :BaseGenerator, 'sailsify/generators/base_generator'
+    autoload :AbstractGenerator, 'sailsify/generators/abstract_generator'
   end
 
   mattr_accessor :destination_dir
