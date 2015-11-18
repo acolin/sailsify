@@ -64,7 +64,7 @@ module Sailsify
       end
 
       def template_path
-        File.expand_path('../templates/model.js.erb', __FILE__)
+        File.expand_path('../../templates/model.js.erb', __FILE__)
       end
     end
   end
