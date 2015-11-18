@@ -5,10 +5,10 @@ module Sailsify
 
       def self.create(params)
         if params.kind_of?(Array)
-          new_objs = params.map { |o| self.new(o) }
+          new_objs = params.map { |o| self.new(model: o) }
           new_objs.each(&:save)
         else
-          new_obj = self.new(params)
+          new_obj = self.new(model: params)
           new_obj.save
         end
       end
