@@ -16,6 +16,10 @@ module Sailsify
 
       private
 
+      def custom_locals
+        { :@model => self }
+      end
+
       def associations
         @associations ||= model.reflect_on_all_associations
       end
