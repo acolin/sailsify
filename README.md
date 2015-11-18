@@ -11,6 +11,6 @@ gem 'sailsify', github: 'acolin/sailsify'
 
 To generate your models, controllers run:
 ```terminal
-rake sailsify
+$ rake sailsify
 ```
 This will create a folder in your rails app root dir called `sailsify`
