@@ -3,8 +3,8 @@ module.exports = {
   attributes: {
     <% @model.columns.each do |c| %>
         <%= c.name.camelize(:lower) %>: {
-          type: <%= c.type %>,
-          columnName: <% c.name %>
+          type: '<%= c.type %>',
+          columnName: '<%= c.name %>'
         },
     <% end %>
     <%= raw @model.render_associations %>
