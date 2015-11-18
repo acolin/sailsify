@@ -27,7 +27,7 @@ module Sailsify
       private
 
       def file_path
-        base_dir.join(file_name)
+        dir.join(file_name)
       end
 
       def file_name
