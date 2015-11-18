@@ -1,12 +1,12 @@
 module.exports = {
   tableName: '<%= @model.table_name %>',
   attributes: {
-    <% @model.columns do |c| %>
+    <% @model.columns.each do |c| %>
         <%= c.name.camelize(:lower) %>: {
           type: <%= c.type %>,
           columnName: <% c.name %>
         },
     <% end %>
-    <%= @model.render_associations %>
+    <%= raw @model.render_associations %>
   }
 };
