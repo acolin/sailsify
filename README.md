@@ -1,5 +1,5 @@
 # Sailsify
-Converts rails models and controllers into sailsjs format.
+Ports rails models and controllers into sailsjs format.
 
 Installation
 --------------
